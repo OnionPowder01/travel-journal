@@ -34,3 +34,112 @@ line-height: 18px;
 letter-spacing: -0.075em;
 color: #FFFFFF;
 }
+
+.card {
+  display: flex;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 5em;
+  padding-bottom: 50px;
+  align-items: center;
+  border-bottom: 2px solid #e6e3ef;
+}
+
+.card--image {
+  margin-right: 2.5em;
+  width: 20em;
+  height: 28em;
+  border-radius: 1em;
+}
+
+.card--checkin {
+  width: .8em;
+  margin-right: 8px;
+}
+
+.card--location {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.2rem;
+line-height: 1rem;
+letter-spacing: 0.17em;
+color: #2B283A;
+margin-right: 1em;
+}
+
+.card--maps {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.2rem;
+line-height: 1rem;
+text-decoration-line: underline;
+color: #918E9B;
+}
+
+.card--h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #2B283A;
+}
+
+.card--period {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 1.3rem;
+line-height: 2rem;
+color: #2B283A;
+}
+
+.card--description {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.3rem;
+line-height: 180%;
+color: #2B283A;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    width: 90%;
+    padding-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-bottom: 1em;
+  }
+
+  .left-side {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 1em ;
+  }
+
+  .card--image {
+    width: 20em;
+    height: 25em;
+    border-radius: 1em;
+    margin-right: initial;
+    
+  }
+
+  .card--h1, .card--period {
+    line-height: initial;
+    margin-top: .4em;
+    margin-bottom: .4em;
+  }
+}
