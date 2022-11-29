@@ -5,8 +5,9 @@ import checkIn from '../images/PngItem_235870.png'
 
 
 export default function Travel(props){
+    
     return (
-        <div className="card">
+        <div className='card'  style={((props.length - 1) === props.index) ? {borderBottom: 'initial'} : {borderBottom: '2px solid #e6e3ef'} } >
             <div className="left-side">
             <img src={props.item.imageUrl} alt="place" className="card--image" />
             </div>

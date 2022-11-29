@@ -5,11 +5,17 @@ import Travel from "./components/Travel";
 
 export default function App() {
 
-  const travelData = Data.map((item) => {
+  const travelData = Data.map((item, index) => {
+    const travelLength = Data.length
+    console.log(travelLength)
     return <Travel 
               key={item.id} 
               item={item}
+              index={index}
+              length={travelLength}
                />;
+
+               
     
 });
   return (
