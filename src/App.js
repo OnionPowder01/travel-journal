@@ -7,7 +7,6 @@ export default function App() {
 
   const travelData = Data.map((item, index) => {
     const travelLength = Data.length
-    console.log(travelLength)
     return <Travel 
               key={item.id} 
               item={item}
